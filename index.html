@@ -24,13 +24,65 @@
       canvas {
         display: block;
       }
-      h2{
+      h2,h3,h1{
         color: #fff;
         position: absolute;
+        animation: fade 4s ease 1;
+        display:none;
+      }
+      .t1{
+        animation-delay:2s;
+      }
+      .t2{
+        animation-delay:2s;
+      }
+      .t3{
+        animation-delay:2s;
+      }
+      .t4{
+        animation-delay:2s;
+      }
+      @keyframes fade{
+        0%{
+          display:block;
+          opacity:0;
+          transform:scale(0.1);
+        }
+        15%{
+          opacity:1;
+          transform:scale(1.1);
+        }
+        50%{
+          opacity:1;
+          transform:scale(1.1);
+        }
+        51%{
+          opacity:0.2;
+          transform:scale(1.1);
+        }
+        55%{
+          opacity:1;
+          transform:scale(1.1);
+        }
+        85%{
+          opacity:1;
+          transform:scale(1.1);
+        }
+        100%{
+          opacity:0;
+          transform:scale(3.1);
+        }
       }
     </style>
     <canvas id="starfieldCanvas"></canvas>
-    <h2>hello</h2>
+    <h2 class="t1">Hello</h2>
+    <h3 class="t2">My ehehehh </h3>
+    <h3 class="t3">heheheheh >> </h3>
+    <h1 class="t4"> nick fury </h3>
+<!--     <h2 class="t1">Hello</h2>
+    <h3 class="t2">My Dear Friend </h3>
+    <h3 class="t3">Introducing Your Lovly Nick Name >> </h3>
+    <h1 class="t4">  </h3> -->
 
     <script src="./starfields.js"></script>
    
