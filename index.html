@@ -40,14 +40,11 @@
         animation-delay:18s;
       }
       .t4{
+        animation: fade1 4s ease 1;
         animation-delay:26s;
-        animation:t4 10s infinite ;
+       
       }
-      @keyframes t4{
-        0%{
-          opacity:1;
-        }
-      }
+    
       @keyframes fade{
         0%{
           display:block;
@@ -82,6 +79,43 @@
         100%{
           display:block;
           opacity:0;
+          transform:scale(3.1);
+        }
+      }
+      @keyframes fade1{
+        0%{
+          display:block;
+          opacity:0;
+          transform:scale(0.1);
+        }
+        15%{
+          display:block;
+          opacity:1;
+          transform:scale(1.1);
+        }
+        50%{
+          display:block;
+          opacity:1;
+          transform:scale(1.1);
+        }
+        51%{
+          display:block;
+          opacity:0.2;
+          transform:scale(1.1);
+        }
+        55%{
+          display:block;
+          opacity:1;
+          transform:scale(1.1);
+        }
+        85%{
+          display:block;
+          opacity:1;
+          transform:scale(1.1);
+        }
+        100%{
+          display:block;
+          opacity:1;
           transform:scale(3.1);
         }
       }
